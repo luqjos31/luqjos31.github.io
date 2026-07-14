@@ -168,16 +168,35 @@
   line-height: 1;
   padding: 4px 10px;
   border: 1px solid #c4c6cf;
-  border-radius: 0.125rem;
   background: transparent;
   color: #43474e;
   cursor: pointer;
   transition: all 0.2s;
 }
 
+.lang-btn:first-of-type {
+  border-radius: 0.125rem 0 0 0.125rem;
+}
+
+.lang-btn:last-of-type {
+  border-radius: 0 0.125rem 0.125rem 0;
+  border-left: none;
+}
+
 .lang-btn:hover {
   background-color: #f3f3f4;
   color: #000613;
+}
+
+.lang-btn--active {
+  background-color: #000613;
+  color: #ffffff;
+  border-color: #000613;
+}
+
+.lang-btn--active:hover {
+  background-color: #001c3a;
+  color: #ffffff;
 }
 
 .dark .lang-btn {
@@ -188,6 +207,17 @@
 .dark .lang-btn:hover {
   background-color: #1c2128;
   color: #e6edf3;
+}
+
+.dark .lang-btn--active {
+  background-color: #e6edf3;
+  color: #0d1117;
+  border-color: #e6edf3;
+}
+
+.dark .lang-btn--active:hover {
+  background-color: #ffffff;
+  color: #0d1117;
 }
 
 .hero {

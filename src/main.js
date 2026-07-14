@@ -74,18 +74,13 @@ function applyLang(lang) {
       }
     }
   })
-  var toggle = document.getElementById("lang-toggle")
-  if (toggle) toggle.textContent = lang === "es" ? "ES" : "EN"
+  document.getElementById("lang-es").classList.toggle("lang-btn--active", lang === "es")
+  document.getElementById("lang-en").classList.toggle("lang-btn--active", lang === "en")
   document.documentElement.setAttribute("lang", lang)
   localStorage.setItem("lang", lang)
 }
 
 applyLang(getPreferredLang())
 
-var langToggle = document.getElementById("lang-toggle")
-if (langToggle) {
-  langToggle.addEventListener("click", function () {
-    var current = localStorage.getItem("lang") || "es"
-    applyLang(current === "es" ? "en" : "es")
-  })
-}
+document.getElementById("lang-es").addEventListener("click", function () { applyLang("es") })
+document.getElementById("lang-en").addEventListener("click", function () { applyLang("en") })
