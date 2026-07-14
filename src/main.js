@@ -70,7 +70,7 @@ function applyLang(lang) {
       if (el.tagName === "IMG") {
         el.setAttribute("alt", translations[lang][key])
       } else {
-        el.textContent = translations[lang][key]
+        el.innerHTML = translations[lang][key]
       }
     }
   })
