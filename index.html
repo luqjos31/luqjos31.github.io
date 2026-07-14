@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en" style=""><head>
+<html class="light" lang="es" style=""><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
@@ -15,15 +15,15 @@
             Jose Luquez
         </div>
 <nav class="hidden md:flex items-center gap-lg">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#solutions">Solutions</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#stack">Technical Stack</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#portfolio">Portfolio</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#solutions" data-i18n="nav_solutions">Soluciones</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#stack" data-i18n="nav_stack">Stack Técnico</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#portfolio" data-i18n="nav_portfolio">Portafolio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact" data-i18n="nav_contact">Contacto</a>
 </nav>
 <div class="flex items-center gap-md">
+<button id="lang-toggle" class="lang-btn">ES</button>
 <button id="theme-toggle" class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded" aria-label="Toggle theme">dark_mode</button>
-
-<a class="hidden sm:block btn-primary px-lg py-sm font-label-md" href="#contact">Hire Me</a>
+<a class="hidden sm:block btn-primary px-lg py-sm font-label-md" href="#contact" data-i18n="hire_me">Contrátame</a>
 </div>
 </div>
 </header>
@@ -32,34 +32,34 @@
 <section class="hero">
 <div class="hero-content">
 <div class="badge-available font-label-md">
-<span class="status-dot"></span> Available for development / Freelance / Remote
+<span class="status-dot"></span> <span data-i18n="badge_available">Disponible para desarrollo / Freelance / Remoto</span>
             </div>
-<h1 class="hero-title">
-                Custom Web Systems: Engineering Applied to Your Business Logic
+<h1 class="hero-title" data-i18n="hero_title">
+                Sistemas Web a Medida: Ingeniería Aplicada a tu Lógica de Negocio
             </h1>
-<p class="hero-description">
-                Since 2020, crafting robust software with a focus on cost control, operational logistics, and industrial-grade automation. I bridge the gap between hardware precision and software scale.
+<p class="hero-description" data-i18n="hero_desc">
+                Desde 2020, creando software robusto con enfoque en control de costos, logística operativa y automatización industrial. Tiendo puentes entre la precisión del hardware y la escala del software.
             </p>
 <div class="hero-actions">
-<a class="btn-primary px-xl py-md font-label-md flex items-center gap-sm" href="#portfolio">
-                    View Projects <span class="material-symbols-outlined">arrow_forward</span>
+<a class="btn-primary px-xl py-md font-label-md flex items-center gap-sm" href="#portfolio" data-i18n="btn_projects">
+                    Ver Proyectos <span class="material-symbols-outlined">arrow_forward</span>
 </a>
-<a class="btn-secondary px-xl py-md font-label-md flex items-center gap-sm" href="https://wa.me/584120525741">
-                    Let's Talk on WhatsApp <span class="material-symbols-outlined">chat</span>
+<a class="btn-secondary px-xl py-md font-label-md flex items-center gap-sm" href="https://wa.me/584120525741" data-i18n="btn_whatsapp">
+                    Hablemos por WhatsApp <span class="material-symbols-outlined">chat</span>
 </a>
 </div>
 </div>
 <div class="hero-image-wrapper">
-<img alt="Jose Luquez" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAubeXbxePrnJzFuYCgY6KmRAJRtstHRrGhRgpeL-Jw2xvc3wnU2nsJj6ocq35268OsOe0Bo20ptchgEYErAOnnHiSteJOwCm8dJNPAOEgZDsY2vNOoTeYZvHdoe99j0L1P8zNUvZevhGnU69m8FPZ4OJISdZYYrj5ISiaQe_notX3uIoNZkRxjVwyG918ZWEkEl37B937xbP3mIu4-ZTYnA6GT4EET-2UvJcILst8-PTRB0rQyAbQg7wMyFkdYEElktfc-qhJ-fTx5"/>
+<img alt="Jose Luquez" data-i18n="alt_profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAubeXbxePrnJzFuYCgY6KmRAJRtstHRrGhRgpeL-Jw2xvc3wnU2nsJj6ocq35268OsOe0Bo20ptchgEYErAOnnHiSteJOwCm8dJNPAOEgZDsY2vNOoTeYZvHdoe99j0L1P8zNUvZevhGnU69m8FPZ4OJISdZYYrj5ISiaQe_notX3uIoNZkRxjVwyG918ZWEkEl37B937xbP3mIu4-ZTYnA6GT4EET-2UvJcILst8-PTRB0rQyAbQg7wMyFkdYEElktfc-qhJ-fTx5"/>
 </div>
 </section>
 <!-- Philosophy & Tech Grid -->
 <section class="bg-surface-container-low py-xxl" id="stack">
 <div class="max-w-container-max mx-auto px-lg">
 <div class="mb-xl max-w-3xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Engineering Philosophy</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant italic">
-                    "My focus is not on hyper-decorative interfaces, but on the solidity of business logic, backend security, data persistence, and optimal system performance."
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md" data-i18n="philosophy_title">Filosofía de Ingeniería</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic" data-i18n="philosophy_quote">
+                    "Mi enfoque no está en interfaces hiper-decorativas, sino en la solidez de la lógica de negocio, seguridad backend, persistencia de datos y rendimiento óptimo del sistema."
                 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
@@ -99,35 +99,35 @@
 <!-- Core Solutions restored section -->
 <section class="py-xxl max-w-container-max mx-auto px-lg" id="solutions">
 <div class="text-center mb-xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Core Solutions</h2>
-<p class="text-secondary max-w-2xl mx-auto">Scalable engineering architectures for diverse business requirements.</p>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm" data-i18n="solutions_title">Soluciones Clave</h2>
+<p class="text-secondary max-w-2xl mx-auto" data-i18n="solutions_sub">Arquitecturas de ingeniería escalables para diversos requisitos empresariales.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
 <!-- Card 1 -->
 <div class="solution-card p-lg space-y-md bg-white">
 <div class="flex items-center gap-sm text-primary">
 <span class="material-symbols-outlined">inventory_2</span>
-<h3 class="font-headline-md">Cost &amp; Inventory Control</h3>
+<h3 class="font-headline-md" data-i18n="solution_1_title">Control de Costos e Inventario</h3>
 </div>
-<p class="text-on-surface-variant">Optimization of raw materials, operational cost calculation, and detailed reporting for traditional and gastronomic businesses.</p>
+<p class="text-on-surface-variant" data-i18n="solution_1_desc">Optimización de materias primas, cálculo de costos operativos y reportes detallados para negocios tradicionales y gastronómicos.</p>
 <div class="font-label-md text-xs text-secondary uppercase tracking-wider">Systems_Architecture_V1</div>
 </div>
 <!-- Card 2 -->
 <div class="solution-card p-lg space-y-md bg-white">
 <div class="flex items-center gap-sm text-primary">
 <span class="material-symbols-outlined">account_tree</span>
-<h3 class="font-headline-md">Logistics &amp; Order Management</h3>
+<h3 class="font-headline-md" data-i18n="solution_2_title">Logística y Gestión de Pedidos</h3>
 </div>
-<p class="text-on-surface-variant">Efficient structures to control customer orders and dispatch workflows, ensuring end-to-end operational visibility.</p>
+<p class="text-on-surface-variant" data-i18n="solution_2_desc">Estructuras eficientes para controlar pedidos de clientes y flujos de despacho, asegurando visibilidad operativa de extremo a extremo.</p>
 <div class="font-label-md text-xs text-secondary uppercase tracking-wider">Workload_Logic_V2</div>
 </div>
 <!-- Card 3 -->
 <div class="solution-card p-lg space-y-md bg-white">
 <div class="flex items-center gap-sm text-primary">
 <span class="material-symbols-outlined">calendar_month</span>
-<h3 class="font-headline-md">Medical Appointment Scheduling</h3>
+<h3 class="font-headline-md" data-i18n="solution_3_title">Agendamiento de Citas Médicas</h3>
 </div>
-<p class="text-on-surface-variant">Scheduled appointment systems and organizational workflows for healthcare professionals with data privacy at the core.</p>
+<p class="text-on-surface-variant" data-i18n="solution_3_desc">Sistemas de citas programadas y flujos organizacionales para profesionales de la salud con privacidad de datos como núcleo.</p>
 <div class="font-label-md text-xs text-secondary uppercase tracking-wider">Healthcare_ERP_V1</div>
 </div>
 </div>
@@ -137,8 +137,8 @@
 <div class="max-w-container-max mx-auto px-lg">
 <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
 <div>
-<h2 class="font-headline-lg text-headline-lg text-primary">Featured Deployments</h2>
-<p class="text-secondary">Mission-critical systems currently in production.</p>
+<h2 class="font-headline-lg text-headline-lg text-primary" data-i18n="portfolio_title">Despliegues Destacados</h2>
+<p class="text-secondary" data-i18n="portfolio_sub">Sistemas críticos actualmente en producción.</p>
 </div>
 </div>
 <div class="space-y-xl">
@@ -146,45 +146,45 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center portfolio-card p-lg rounded-none">
 <div class="space-y-lg">
 <div class="flex items-center gap-md">
-<h3 class="font-display-lg text-headline-md text-primary">CostoCero.app</h3>
-<span class="bg-primary-container text-on-primary px-sm py-1 font-label-md text-[10px] uppercase">Active SaaS</span>
+<h3 class="font-display-lg text-headline-md text-primary" data-i18n="project_1_name">CostoCero.app</h3>
+<span class="bg-primary-container text-on-primary px-sm py-1 font-label-md text-[10px] uppercase" data-i18n="project_1_badge">SaaS Activo</span>
 </div>
-<p class="font-body-lg text-on-surface-variant">
-                            A comprehensive financial suite for small business cost tracking. Featuring full PayPal integration for subscription management and automated tax reporting.
+<p class="font-body-lg text-on-surface-variant" data-i18n="project_1_desc">
+                            Suite financiera integral para control de costos en pequeños negocios. Integración completa con PayPal para gestión de suscripciones y reportes de impuestos automatizados.
                         </p>
 <ul class="font-label-md text-secondary space-y-sm">
-<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-sm">check_circle</span> End-to-end encryption</li>
-<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-sm">check_circle</span> Real-time currency conversion</li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-sm">check_circle</span> <span data-i18n="project_1_feat_1">Cifrado de extremo a extremo</span></li>
+<li class="flex items-center gap-sm"><span class="material-symbols-outlined text-sm">check_circle</span> <span data-i18n="project_1_feat_2">Conversión de moneda en tiempo real</span></li>
 </ul>
-<a class="btn-primary inline-flex px-lg py-sm font-label-md items-center gap-sm w-fit" href="#">
-                            Visit CostoCero.app <span class="material-symbols-outlined">launch</span>
+<a class="btn-primary inline-flex px-lg py-sm font-label-md items-center gap-sm w-fit" href="#" data-i18n="project_1_cta">
+                            Visitar CostoCero.app <span class="material-symbols-outlined">launch</span>
 </a>
 </div>
 <div class="bg-surface-container h-80 flex items-center justify-center border border-outline-variant overflow-hidden group">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean and modern software interface screenshot for a cost-control SaaS named CostoCero." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjOBWIHBaBfOrK068jR2N4_jynQR70n0xVvBqObgSVW2n4o7TcnS4hO6xrf0w_p8w_sF3CFpVfKqzI37dHLQhaEBXg0KkW9fTU3zCAFgTjQOlHgjXVhgv2ZzrIJrN2UIfN1tuWchbaXUy1Qt4VN_Q4GXkUwN_3vdfpBqujsNM52HVV6O8aRVnmLOfktN8p0VwSEytb5G5KDwhssB9MakZWueWSBmv138ICJIp613Uz4YdshKGfKZnzhuvUuUpoXthm5dB2-u5m_VPu"/>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-i18n="alt_project_1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjOBWIHBaBfOrK068jR2N4_jynQR70n0xVvBqObgSVW2n4o7TcnS4hO6xrf0w_p8w_sF3CFpVfKqzI37dHLQhaEBXg0KkW9fTU3zCAFgTjQOlHgjXVhgv2ZzrIJrN2UIfN1tuWchbaXUy1Qt4VN_Q4GXkUwN_3vdfpBqujsNM52HVV6O8aRVnmLOfktN8p0VwSEytb5G5KDwhssB9MakZWueWSBmv138ICJIp613Uz4YdshKGfKZnzhuvUuUpoXthm5dB2-u5m_VPu"/>
 </div>
 </div>
 <!-- Project 2 & 3 (Grid) -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
 <div class="portfolio-card p-lg space-y-md">
 <div class="h-48 bg-surface-container-low border border-outline-variant mb-md overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A technical architectural diagram for a Dairy Production ERP system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY1VblNEU5P802Ug5IgWcCcGaw-nSFT1GB-FkjwbJkJ5LJ__hKaZ8MZI3nBvLiEkOkXhLo3iVqczCDL8U8esj3m0r0R0AY6R2IzsjjQhpqfMBH9ZpyLLYcJ34s5g3yhG13AS8-vCw3yT2OL2wmpyYvzO3h-OIx4JbvB7wX-YTegqQxITmFpQqg__o9mISBmeUE-_LAP8QyvYtkioFoM6QZ3cLnFlRqj9ht0cd12ijiaf8YnIkD1h1n41lKrSSLn-2qesJdrDVg-MVt"/>
+<img class="w-full h-full object-cover" data-i18n="alt_project_2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY1VblNEU5P802Ug5IgWcCcGaw-nSFT1GB-FkjwbJkJ5LJ__hKaZ8MZI3nBvLiEkOkXhLo3iVqczCDL8U8esj3m0r0R0AY6R2IzsjjQhpqfMBH9ZpyLLYcJ34s5g3yhG13AS8-vCw3yT2OL2wmpyYvzO3h-OIx4JbvB7wX-YTegqQxITmFpQqg__o9mISBmeUE-_LAP8QyvYtkioFoM6QZ3cLnFlRqj9ht0cd12ijiaf8YnIkD1h1n41lKrSSLn-2qesJdrDVg-MVt"/>
 </div>
 <div class="flex justify-between items-start">
-<h3 class="font-headline-md text-primary">Dairy Production ERP</h3>
+<h3 class="font-headline-md text-primary" data-i18n="project_2_name">ERP Producción Láctea</h3>
 <span class="material-symbols-outlined text-outline">lock</span>
 </div>
-<p class="text-body-md text-on-surface-variant">Private enterprise system focused on traceability and automated yield reports for dairy processing plants.</p>
+<p class="text-body-md text-on-surface-variant" data-i18n="project_2_desc">Sistema empresarial privado enfocado en trazabilidad y reportes automatizados de rendimiento para plantas procesadoras de lácteos.</p>
 </div>
 <div class="portfolio-card p-lg space-y-md">
 <div class="h-48 bg-surface-container-low border border-outline-variant mb-md overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A minimalist medical management dashboard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiZkuVP-A8TKA6c1ra5gpg0BwAdrwlYUGEQ9UjspRaRrWQ0AlNjt1UAoAe9TPzw_B83TcdgVmS4Tz05UGDGsPzOVHgeP5z_Tct5JYTXfWVoH2WdaYOq_gHfQZLK9QdxNrUomqjtkhDQnbDXtLsKgZVsMQCfERLwHWEnpV61UY_X5VY36tWzeI-lCgEGFcpeR9GB6IaJ3wCBERvrMRjCorLZgj-YU4F0alOrkpZ_9Lp0024gdbxAxsJ7HEbcwy-2bc0qupBzFYmwU8i"/>
+<img class="w-full h-full object-cover" data-i18n="alt_project_3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiZkuVP-A8TKA6c1ra5gpg0BwAdrwlYUGEQ9UjspRaRrWQ0AlNjt1UAoAe9TPzw_B83TcdgVmS4Tz05UGDGsPzOVHgeP5z_Tct5JYTXfWVoH2WdaYOq_gHfQZLK9QdxNrUomqjtkhDQnbDXtLsKgZVsMQCfERLwHWEnpV61UY_X5VY36tWzeI-lCgEGFcpeR9GB6IaJ3wCBERvrMRjCorLZgj-YU4F0alOrkpZ_9Lp0024gdbxAxsJ7HEbcwy-2bc0qupBzFYmwU8i"/>
 </div>
 <div class="flex items-center gap-md">
-<h3 class="font-headline-md text-primary">Medical Management MVP</h3>
-<span class="bg-amber-100 text-amber-800 px-sm py-1 font-label-md text-[10px] uppercase leading-none">In Development</span>
+<h3 class="font-headline-md text-primary" data-i18n="project_3_name">MVP Gestión Médica</h3>
+<span class="bg-amber-100 text-amber-800 px-sm py-1 font-label-md text-[10px] uppercase leading-none" data-i18n="project_3_badge">En Desarrollo</span>
 </div>
-<p class="text-body-md text-on-surface-variant">Full-stack automation for healthcare clinics. Secure patient records, automated scheduling, and prescription tracking.</p>
+<p class="text-body-md text-on-surface-variant" data-i18n="project_3_desc">Automatización full-stack para clínicas. Registros seguros de pacientes, agendamiento automatizado y seguimiento de recetas.</p>
 </div>
 </div>
 </div>
@@ -193,16 +193,16 @@
 <!-- CTA / Availability -->
 <section class="py-xxl bg-primary-container text-on-primary" id="contact">
 <div class="max-w-container-max mx-auto px-lg text-center space-y-lg">
-<h2 class="font-display-lg text-display-lg">Availability for New Projects &amp; Integrations</h2>
-<p class="font-body-lg text-on-primary-container max-w-2xl mx-auto opacity-90">
-                I am currently open to freelance opportunities and technical team integration. Whether you need a ground-up system or optimization of existing business logic, my engineering approach ensures scalability and security.
+<h2 class="font-display-lg text-display-lg" data-i18n="cta_title">Disponible para Nuevos Proyectos e Integraciones</h2>
+<p class="font-body-lg text-on-primary-container max-w-2xl mx-auto opacity-90" data-i18n="cta_desc">
+                Actualmente abierto a oportunidades freelance e integración a equipos técnicos. Ya sea que necesites un sistema desde cero u optimización de lógica de negocio existente, mi enfoque de ingeniería garantiza escalabilidad y seguridad.
             </p>
 <div class="flex flex-col sm:flex-row justify-center items-center gap-md pt-lg">
-<a class="bg-on-tertiary-container text-white px-xxl py-md rounded font-label-md flex items-center gap-sm hover:scale-105 transition-transform" href="https://wa.me/584120525741">
-<span class="material-symbols-outlined">chat</span> Start a Discussion
+<a class="bg-on-tertiary-container text-white px-xxl py-md rounded font-label-md flex items-center gap-sm hover:scale-105 transition-transform" href="https://wa.me/584120525741" data-i18n="cta_whatsapp">
+<span class="material-symbols-outlined">chat</span> Iniciar una Conversación
                 </a>
-<a class="border border-white/30 text-white px-xxl py-md rounded font-label-md hover:bg-white/10 transition-colors" href="mailto:luqjos31@gmail.com">
-                    Send Inquiry
+<a class="border border-white/30 text-white px-xxl py-md rounded font-label-md hover:bg-white/10 transition-colors" href="mailto:luqjos31@gmail.com" data-i18n="cta_email">
+                    Enviar Consulta
                 </a>
 </div>
 </div>

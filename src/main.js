@@ -1,4 +1,7 @@
-(function () {
+import { translations } from "./translations.js"
+
+// --- Dark mode ---
+;(function () {
   var themeToggle = document.getElementById("theme-toggle")
   var html = document.documentElement
 
@@ -32,6 +35,7 @@
   })
 })()
 
+// --- Active link ---
 var sections = document.querySelectorAll("section[id]")
 var navLinks = document.querySelectorAll("nav a")
 
@@ -51,4 +55,37 @@ window.addEventListener("scroll", function () {
   })
 })
 
+// --- Dynamic year ---
 document.getElementById("current-year").textContent = new Date().getFullYear()
+
+// --- i18n ---
+function getPreferredLang() {
+  return localStorage.getItem("lang") || "es"
+}
+
+function applyLang(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(function (el) {
+    var key = el.getAttribute("data-i18n")
+    if (translations[lang] && translations[lang][key]) {
+      if (el.tagName === "IMG") {
+        el.setAttribute("alt", translations[lang][key])
+      } else {
+        el.textContent = translations[lang][key]
+      }
+    }
+  })
+  var toggle = document.getElementById("lang-toggle")
+  if (toggle) toggle.textContent = lang === "es" ? "ES" : "EN"
+  document.documentElement.setAttribute("lang", lang)
+  localStorage.setItem("lang", lang)
+}
+
+applyLang(getPreferredLang())
+
+var langToggle = document.getElementById("lang-toggle")
+if (langToggle) {
+  langToggle.addEventListener("click", function () {
+    var current = localStorage.getItem("lang") || "es"
+    applyLang(current === "es" ? "en" : "es")
+  })
+}
