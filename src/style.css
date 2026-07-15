@@ -138,6 +138,8 @@
 
 .dark .text-primary { color: #e6edf3; }
 
+.dark .hover\:text-primary:hover { color: #e6edf3; }
+
 .dark .text-secondary { color: #8b949e; }
 
 .dark .text-on-surface-variant { color: #8b949e; }
