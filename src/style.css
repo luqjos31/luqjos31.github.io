@@ -325,10 +325,6 @@
   }
 }
 
-/* Mobile menu transition */
 #mobile-menu {
   transition: opacity 0.2s ease;
-}
-#mobile-menu.hidden {
-  display: none;
 }
