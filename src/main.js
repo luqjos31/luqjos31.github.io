@@ -84,3 +84,24 @@ applyLang(getPreferredLang())
 
 document.getElementById("lang-es").addEventListener("click", function () { applyLang("es") })
 document.getElementById("lang-en").addEventListener("click", function () { applyLang("en") })
+
+// --- Mobile menu ---
+var menuToggle = document.getElementById("menu-toggle")
+var menuClose = document.getElementById("menu-close")
+var mobileMenu = document.getElementById("mobile-menu")
+
+function closeMenu() {
+  mobileMenu.classList.add("hidden")
+  menuToggle.textContent = "menu"
+}
+
+menuToggle.addEventListener("click", function () {
+  mobileMenu.classList.toggle("hidden")
+  menuToggle.textContent = mobileMenu.classList.contains("hidden") ? "menu" : "close"
+})
+
+menuClose.addEventListener("click", closeMenu)
+
+mobileMenu.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", closeMenu)
+})
