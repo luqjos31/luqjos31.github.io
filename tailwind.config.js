@@ -43,7 +43,7 @@ export default {
         "surface-variant": "#e2e2e2",
         "on-primary-fixed-variant": "#2f486a",
         "on-surface": "#1a1c1c",
-        "background": "#f9f9f9",
+        "background": "#f4f4f5",
         "on-secondary-fixed-variant": "#394857",
         "secondary": "#50606f",
         "secondary-container": "#d1e1f4",

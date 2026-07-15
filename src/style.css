@@ -64,7 +64,7 @@
 }
 
 .portfolio-card {
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #e2e2e2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
