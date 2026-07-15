@@ -160,6 +160,8 @@
 
 .dark .bg-on-tertiary-container { background-color: #2ea043; }
 
+.dark #mobile-menu { background-color: rgba(13, 17, 23, 0.95); }
+
 .dark .bg-primary-container { background-color: #0d1117; }
 
 .dark .text-on-tertiary { color: #ffffff; }
