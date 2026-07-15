@@ -91,17 +91,15 @@ var menuClose = document.getElementById("menu-close")
 var mobileMenu = document.getElementById("mobile-menu")
 
 function closeMenu() {
-  mobileMenu.style.display = "none"
+  mobileMenu.classList.add("hidden")
+  mobileMenu.classList.remove("flex")
   menuToggle.textContent = "menu"
 }
 
 menuToggle.addEventListener("click", function () {
-  if (mobileMenu.style.display === "none") {
-    mobileMenu.style.display = "flex"
-    menuToggle.textContent = "close"
-  } else {
-    closeMenu()
-  }
+  mobileMenu.classList.toggle("hidden")
+  mobileMenu.classList.toggle("flex")
+  menuToggle.textContent = mobileMenu.classList.contains("hidden") ? "menu" : "close"
 })
 
 menuClose.addEventListener("click", closeMenu)
